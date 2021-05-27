@@ -10,21 +10,27 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     var appTitle = Text('第一個flutter App');
 
-    // var hiFlutter = Text(
-    //   'Hi Flutter.',
-    //   style: TextStyle(fontSize: 30),
-    // );
+    var hiFlutter = Text(
+      'Hi Flutter.\n 你真是太神奇了！',
+      style: TextStyle(
+        fontSize: 30,
+        color: Color(0xff29527A),
+        decoration: TextDecoration.underline,
+        fontWeight: FontWeight.bold,),
+      textAlign:TextAlign.center,
+    );
 
-    var img = Image.asset(
-      'assets/logo.png',
-      fit: BoxFit.cover,
+    // var img = Image.asset(
+    //   'assets/logo.png',
+    //   fit: BoxFit.cover,
       
-      width: 200.0,
-      height: 200.0,
-      );
+    //   width: 200.0,
+    //   height: 200.0,
+    //   );
 
     var appBody = Center(
-      child: img,
+      child: hiFlutter,
+      heightFactor: 2,
     );
 
     var appBar = AppBar(
